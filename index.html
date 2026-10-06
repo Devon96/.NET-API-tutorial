@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.NET REST API Builder Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">C#</div>
+      <div>
+        <div class="brand-title">.NET API Builder</div>
+        <div class="brand-subtitle" data-i18n="brandSubtitle">Lépésről lépésre felépített REST API minta</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="lang-btn active" data-lang="hu">HU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <a class="github-btn" href="#project" data-i18n="jumpToProject">Projekt áttekintése</a>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-intro">
+        <div class="eyebrow">ASP.NET Core 10 · EF Core</div>
+        <h1 data-i18n="pageTitle">Építsünk együtt egy Orders REST API-t</h1>
+        <p data-i18n="pageIntro">
+          A cél egy jól tagolt, modern Web API, amely ügyfeleket, rendeléseket és rendelési tételeket kezel.
+        </p>
+      </div>
+
+      <nav class="tabs" id="tabs">
+        <button class="tab active" data-tab="overview"><span>01</span><b data-i18n="tabOverview">Áttekintés</b></button>
+        <button class="tab" data-tab="project"><span>02</span><b data-i18n="tabProject">Projektstruktúra</b></button>
+        <button class="tab" data-tab="setup"><span>03</span><b data-i18n="tabSetup">Projekt létrehozása</b></button>
+        <button class="tab" data-tab="entities"><span>04</span><b data-i18n="tabEntities">Entity-k</b></button>
+        <button class="tab" data-tab="dbcontext"><span>05</span><b data-i18n="tabDbContext">DbContext</b></button>
+        <button class="tab" data-tab="repository"><span>06</span><b data-i18n="tabRepository">Repository</b></button>
+        <button class="tab" data-tab="service"><span>07</span><b data-i18n="tabService">Service</b></button>
+        <button class="tab" data-tab="dto"><span>08</span><b data-i18n="tabDto">DTO + validáció</b></button>
+        <button class="tab" data-tab="controller"><span>09</span><b data-i18n="tabController">Controller</b></button>
+        <button class="tab" data-tab="config"><span>10</span><b data-i18n="tabConfig">Config + DI</b></button>
+        <button class="tab" data-tab="flow"><span>11</span><b data-i18n="tabFlow">CRUD folyamat</b></button>
+        <button class="tab" data-tab="run"><span>12</span><b data-i18n="tabRun">Futtatás + teszt</b></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="progress-wrap">
+          <div class="progress-label"><span data-i18n="progress">Haladás</span><strong id="progressText">1 / 12</strong></div>
+          <div class="progress"><div id="progressBar"></div></div>
+        </div>
+        <p data-i18n="tip">Tipp: másold ki a kódblokkokat sorban, és ugyanilyen struktúrában hozd létre a saját projektedet.</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="content-header">
+        <div>
+          <div class="kicker">REST API · Orders</div>
+          <h2 id="sectionTitle">Áttekintés</h2>
+        </div>
+        <div class="content-header-right">
+          <span class="badge"><span class="dot"></span>.NET 10 LTS</span>
+          <span class="badge">EF Core + SQLite</span>
+        </div>
+      </section>
+
+      <div id="app"></div>
+
+      <footer class="footer">
+        <span>.NET API Builder Guide</span>
+        <span data-i18n="footerText">Tanulási célú sablon · A kódot saját projektedhez igazítsd.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
